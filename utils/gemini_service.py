@@ -35,11 +35,16 @@ def extract_feature_text(texts:str):
     try:
         all_text = texts
         # First, let the model read and understand the content
-        response = model.generate_content(f"Đọc nội dung {all_text} và lưu lại thông tin không cần phản hồi")
+        response = model.generate_content(f"Read the content of {all_text} and store it no need to respond")
         
         # Then extract specific features
-        question = f"Tôi muốn lấy thông tin từ {all_text} và trả về thông tin: {features} format lại thành JSON với các key: context, abbreviation, profession, specialty, fullname, phone, skill, education"
-        response = model.generate_content(question)
+        question = f"I want to extract information from {all_text} and return the information: {features} format it as JSON with keys: context, abbreviation, profession, specialty, fullname, phone, skill, education"
+        response1 = model.generate_content(question)
+        # # Reccommend the CV content and suggest improvements
+        # question = f"Based on the content of {all_text}, please suggest improvements to make the CV more appealing to recruiters."
+        # response2 = model.generate_content(question)
+
+        response = response1# + "\n\nSuggestions for improvement:\n" + response2
         
         if response.text:
             return {

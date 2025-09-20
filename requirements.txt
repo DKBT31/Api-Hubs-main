@@ -1,12 +1,33 @@
+# ResumeAI Parser - Virtual Environment Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core FastAPI framework
 fastapi==0.88.0
 uvicorn==0.22.0
+python-multipart==0.0.20
+
+# Document processing
 pyyaml
-python-multipart
 tika
 pdfminer
-numpy
-pdf2image
-opencv-python
 pdfplumber
-# brew install poppler
+pdf2image
+
+# Image processing and OCR (all in venv)
+opencv-python
+numpy
+Pillow
+scikit-image
+
+# OCR engines (virtual environment only)
+pytesseract
+easyocr
+
+# AI and utilities
 google-generativeai
+python-dotenv
+requests
+
+# Note: For optimal OCR performance, install Tesseract executable:
+# Windows: winget install UB-Mannheim.TesseractOCR
+# OCR will work with EasyOCR alone if Tesseract is not available

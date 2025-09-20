@@ -18,6 +18,14 @@ import pdfplumber
 # import itertools
 from tika import parser
 
+# Import OCR functionality
+try:
+    from utils.ocr_processor import extract_text_with_ocr, ocr_processor
+    OCR_AVAILABLE = True
+except ImportError as e:
+    print(f"⚠️ OCR functionality not available: {e}")
+    OCR_AVAILABLE = False
+
 def pdfminer_extract(path,param):
     if "LTTextBox" in param:
         param = pdfminer.layout.LTTextBox
@@ -249,6 +257,20 @@ def detect_line(boxes, image_, ratio_column):
 # read file pdf
 def pdf_extract(path):
     print ('-------path------------',path)
+    
+    # First, try OCR-based extraction if available
+    if OCR_AVAILABLE:
+        try:
+            texts, used_ocr = extract_text_with_ocr(path)
+            if used_ocr:
+                print("✅ Successfully extracted text using OCR")
+                return texts, ""
+            else:
+                print("📄 Text-based PDF, continuing with standard extraction")
+        except Exception as e:
+            print(f"⚠️ OCR extraction failed, falling back to standard method: {e}")
+    
+    # Standard extraction method (existing logic)
     try:
         result = extract_box(path, "LTTextBox")
         if result is None:

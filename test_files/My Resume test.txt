@@ -1,0 +1,49 @@
+Margaret Lage
+Functional Manual Tester
+
+Phone: (415) 555-1234
+Email: margaretlage@gmail.com
+Address: San Francisco, CA
+
+Professional summary
+Detail-oriented Functional Manual Tester with 7+ years of experience in testing web and mobile applications across multiple domains. Skilled in developing test plans, executing test cases, and identifying critical issues. Proven ability to collaborate with cross-functional teams to ensure the delivery of high-quality software solutions.
+
+Experience
+Functional Manual Tester
+March 2021 - Now
+TechSprint Solutions, San Francisco, CA
+  • Develop and execute test cases for functional, regression, and acceptance testing for a customer relationship management (CRM) system.
+  • Collaborate with developers and product managers to understand functional requirements and create test scripts.
+  • Identify and report software defects using Jira, ensuring timely resolution.
+  • Conduct user acceptance testing (UAT) to ensure alignment with business needs before product release.
+  • Perform integration testing of APIs and backend systems.
+  • Assist in the automation of functional tests using Selenium (framework setup).
+
+
+QA Analyst
+July 2018 - February 2021
+BrightPath Technologies, Oakland, CA
+  • Designed and executed functional test cases for an e-commerce platform, covering scenarios such as login, search, checkout, and payment.
+  • Participated in sprint planning and daily stand-ups, ensuring test cases aligned with project goals.
+  • Developed detailed bug reports, tracked defect life cycles, and followed up with development teams.
+  • Ensured quality standards and procedures were adhered to for every release cycle.
+
+
+Education
+Certified Software Tester (CSTE)
+QAI Global Institute
+2023
+
+ISTQB Foundation Level Certification
+International Software Testing Qualifications Board
+2021
+
+Skills
+Manual Testing (Functional, Regression, UAT) ★★★★★
+Jira, TestRail, Bugzilla ★★★★★
+Test Planning & Test Case Design ★★★★★
+API Testing (Postman, SoapUI) ★★★★★
+
+Links
+LinkedIn: /in/margaretlage
+
